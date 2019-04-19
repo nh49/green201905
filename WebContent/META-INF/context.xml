@@ -1,0 +1,20 @@
+<Context>
+   <Resource
+      name="ggggg" 
+      auth = "Container"
+      type = "javax.sql.DataSource"
+      driverClassName = "com.mysql.jdbc.Driver"
+      url = "jdbc:mysql://localhost:3306/green_db?characterEncoding=utf-8"
+      username = "green"
+      password = "123456"
+      maxActive = "8"
+      maxIdle = "8"
+      maxWait = "10" 
+   />
+</Context>
+<!-- characterEncoding=utf-8" 에러가 난다면 serverTiMEJONE=UTC-->
+
+<!-- name : 맘대로 쓰되 기억해둬야함 -->
+<!-- url = "jdbc:mysql://localhost:3306/green_db?serverTimezone=UTC"
+	url = "jdbc:mysql://localhost:3306/green_db?characterEncoding=utf-8&serverTimezone=UTC" 
+	url = "jdbc:mysql://localhost:3306/green_db?characterEncoding=utf-8&amp;serverTimezone=UTC"-->
